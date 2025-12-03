@@ -1,0 +1,328 @@
+/*css document*/
+
+
+li {list-style-type: none;box-sizing: border-box;}
+
+a {	text-decoration: none;	outline: none;}
+
+body {
+	overflow-x: hidden;
+	overflow-y: auto;
+	color: white;
+	font-size: 14px;
+	font-family: 'Gotham', Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
+}
+ @font-face {
+ 	font-family: 'icomoon';
+ 		src:  url('../fonts/icomoon.eot?gm13yx');
+  		src:  url('../fonts/icomoon.eot?gm13yx#iefix') format('embedded-opentype'),
+  			  url('../fonts/icomoon.ttf?gm13yx') format('truetype'),
+  			  url('../fonts/icomoon.woff?gm13yx') format('woff'),
+   			  url('../fonts/icomoon.svg?gm13yx#icomoon') format('svg');
+ 	font-style: normal;
+ 	font-weight: normal;
+ }
+ @media only screen and (max-width: 640px) {
+ 		.nav-sub>a>img{margin-top: 4px;}
+ 			.nav-items{ display: none;}
+ 			.fold-menu{font-size: 14px;}
+	  		.fold-menu ul>li{line-height: 28px;}
+ }
+ @media only screen and (min-width: 421px) and (max-width: 800px) {
+ 		.nav-sub>a>img{margin-top: 4px;}
+ 		.nav-items{ display: none;}
+ 		 .fold-menu{font-size: 18px;}
+		 .fold-menu ul>li{line-height: 50px;}
+ 	
+ }
+  @media only screen and (min-width: 801px) and (max-width:1214px ) {
+  		.nav-sub>a>img{margin-top: 4px;}
+ 		.nav-items{ display: none;}
+ 		.fold-menu{display: none;}     /*      nav中 折叠菜单样式             */
+	 	.fold-button{display: none;}   /*      nav中 折叠按钮样式             */
+ 		
+ }
+  @media only screen and (min-width:1215px ) {
+ 		.nav-items{ display: inline-block;}
+ 		.nav-sub>a>img{margin-bottom: 10px;}
+ 		.fold-menu{display: none;}          /*       nav中折叠菜单样式             */
+		.fold-button{display: none;}       /*      nav中 折叠按钮样式             */
+ 		
+ }
+/*nav*/
+ .nav {	width: 100%;	background-color: #282828;}
+
+ .nav-sub {	width: 100%;	height: 67px;	text-align: center;}
+ 
+ .nav-sub>a>img {display: inline-block;
+	vertical-align: middle; 	height: 50px;
+ 	width: 140px;	cursor: pointer;
+ }
+ 
+ .nav-sub .nav-items{/*display: inline-block;*/list-style-type: none;
+ 	height: 67px;	margin-left: 100px;
+ 	/*这里会继承父元素的text-align=center*/
+ }
+ /*使用display:table 和margin:0 auto;也可以居中ul里的li*/
+
+
+ .nav-sub .nav-items>li{	 display: inline-block;
+ 	line-height: 67px;	cursor: pointer;padding: 0 25px;
+ }
+ .nav-sub .nav-items>li>a{color: white;}
+ .nav-sub .nav-items>li:hover{color: #AAAAAA;}
+  .nav-sub .nav-items>li>a:hover{color: #AAAAAA;}
+ #shop-car:hover{color: white;}
+ 
+ /*下拉菜单---产品*/
+ .product .list {
+ 	display: block;
+ 	position: absolute;
+ 	left: 0;
+ 	top: 67px;
+ 	background: rgba(49, 49, 49, 0.95);
+ 	width: 100%;
+ 	height: 0;
+ 	text-align: center;
+ 	transition: height 0.5s;
+ 	-moz-transition: height 0.5s;
+ 	/* Firefox 4 */
+ 	-webkit-transition: height 0.5s;
+ 	/* Safari and Chrome */
+ 	-o-transition: height 0.5s;
+ 	/* Opera */
+ 	z-index: 1000;
+ }
+ .list-sub {
+ 	overflow: hidden;
+ 	position: relative;
+ 	height: 100%;
+ }
+ .list-sub ul {
+ 	position: absolute;
+ 	left: 0;
+ 	top: 50px;
+ 	padding: 0;
+ 	margin: 0 auto;
+ 	text-align: center;
+ 	overflow: hidden;
+ 	width: 100%;
+ 	height: 188px;
+ }
+
+.list-sub ul li {
+ 	text-align: center;
+ 	cursor: pointer;
+ 	display: inline-block;
+ 	position:relative;
+ }
+.list-sub a{color: #AAA;}
+.list-sub a:hover{color: white;}
+.list-sub li img{
+ 	height: 95px;
+ 	padding: 0 50px;
+ }
+.list-sub li span{
+ 	position: absolute;
+ 	top: 95px;
+ 	left: 70px;
+ }
+ 
+
+ /*用户登录和购物车*/	
+ .icon-user:after{
+ 		content: "\e900";
+ 		font-family: 'icomoon';
+ 		font-size: 14px;
+ 		display: inline-block;
+ 		line-height: 65px;	
+ }
+ .icon-car:after{
+ 		content: "\e901";
+ 		font-family: 'icomoon';
+ 		font-size: 14px;
+ 		display: inline-block;
+ 		line-height: 65px;
+ 		color: white;	
+ }
+ .icon-car{
+ 	background-color: #F25C4A;
+ }
+ .icon-user{
+ 	margin-left: 50px;
+ }
+  .nav-sub>ul .icon-car:hover{
+ 	background-color: #EE4834;
+ }
+ 
+
+
+.fold-button{
+
+	width: 0;
+	height: 0;
+}
+.fold-button button{
+	
+	background: #282828;
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	width: 20px;
+	height: 25px;
+	cursor: pointer;
+
+}
+.rotate .fold-b-h:before{
+	transform: rotate(45deg);
+	border-top:none;
+	left:21px;top: 14px;
+}
+.rotate .fold-b-h:after{
+	transform: rotate(-45deg);
+}
+.fold-b-h:before{
+	position: absolute;
+	top: 20px;
+	left:15px;
+	transition: transform 0.1s linear;
+	content: ' ';
+	height: 18px;
+	width: 20px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.fold-b-h:after{
+	position: absolute;
+	top: 29px;
+	left:15px;
+	transition: transform 0.1s linear;
+	content: ' ';
+	height: 1px;
+	width: 20px;
+	background: #ddd;
+}
+
+ /*     折叠菜单样式        */
+ .fold-menu{
+ 	/*display:inline-block;*/
+ 	width: 100%;
+ 	height: 0;
+ 	/*height: 350px;*/
+ 	background-color: white;
+ 	z-index: 100000;
+ 	text-align: center;
+ 	position: absolute;
+ 	top: 67px;
+ 	transition: height 0.2s;
+ 	overflow: hidden;
+ }
+
+.fold-menu ul{
+	height: 100%;
+	/*display: inline-block;*/
+	color: black;
+	
+	background: #F5F5F5;
+}
+.fold-menu ul>li{
+	/*line-height: 50px;*/
+}
+.fold-menu ul>li>a{
+	color: black;
+	/*font-size: 18px;*/
+}
+.fold-menu ul>li>a:hover{
+	color:#E95F46;
+}
+
+
+
+
+
+@media only screen and (max-width:420px ) {
+	.menu dt{
+		font-size: 14px;
+		font-weight: 900;
+	}
+	.menu ul li{
+		width: 25%;
+	}
+	.menu ul li:nth-child(3){
+		display: none;
+	}.menu ul li:nth-of-type(6){
+		display: none;
+	}
+
+}
+@media only screen and (min-width: 421px)  {
+	.menu ul li{
+		width: 16.66%;
+	}
+}
+/*中部导航菜单*/
+ 
+ .menu {
+ 	width: 100%;
+ 	height: 420px;
+ 	background-color: #EFEEEB;
+ }
+ 
+ .menu ul {
+ 	width: 100%;
+ 	text-align: center;
+ }
+ 
+ .menu ul li {
+ 	/*width: 16.66%;*/
+ 	float: left;
+ 	margin-top: 65px;
+ 	font-size: 16px;
+ 	color: #666;
+ }
+ 
+ .menu dl {
+ 	display: inline-block;
+ 	text-align: left;
+ }
+ 
+ .menu dl>dt {
+ 	
+ 	margin-bottom: 10px;
+ }
+ 
+ .menu dl>dd {
+ 	font-size: 12px;
+ 	line-height: 22px;
+ }
+ 
+ .menu dl>dd:hover {
+ 	color: #E95F46;
+ }
+ /*尾部信息*/
+ 
+ .footer {
+ 	width: 100%;
+ 	height: 280px;
+ 	background-color: white;
+ 	text-align: center;
+ 	color: #555;
+ }
+ 
+ .footer-img {
+ 	margin: 0 auto;
+ 	width: 200px;
+ 	height: 50px;
+ 	margin-top: 5px;
+ }
+
+.footer-img img+img{
+	margin-left: 12px;
+}
+ .footer-info {
+ 	margin: 0 auto;
+ 	height: 100px;
+ 	line-height: 2.5;
+ }

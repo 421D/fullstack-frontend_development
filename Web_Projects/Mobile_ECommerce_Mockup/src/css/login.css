@@ -1,0 +1,125 @@
+body{
+    background-color: #F5F5F5;
+}
+.user-container{
+    width: 850px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 60px;
+    /*padding-bottom: 80px;
+    margin-bottom: 40px;	*/
+    text-align: center;
+    position: relative;
+}
+/*努比亚logo*/
+.user-logo{
+    display: inline-block;
+    width: 156px;
+    height: 55px;
+    background: url(../img/icon/nubia-logo.png) no-repeat 0 -55px;
+    margin: 30px 0 5px 0;
+}
+/*两个切换label*/
+.user-container label{
+    font-size: 16px;
+}
+.lableItems label.avtive{color: #EC380D;}
+#phoneRegister{
+	display: none;
+}
+/*设置 手机号 邮箱 密码 输入验证码 input的样式 */
+.user-container .input-text{
+    width: 360px;
+    height: 50px;
+    display: inline-block;
+    outline: none;
+    border: 1px solid #E0E4E7;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+/*设置每个dd之间的上外边距为20px*/
+.user-container .input-margin{
+    margin-top: 20px;
+}
+/*注册按钮*/
+.user-container .input-btn{
+    margin-top: 20px;
+    background-color: #E8380D;
+    color: white;border: none;
+    padding: 0;font-size: 18px;
+    width: 360px;
+    height: 50px;
+    display: inline-block;
+    outline: none;
+    box-sizing: border-box;
+
+}
+.user-container .input-btn:hover{cursor: pointer;}
+/*验证码*/
+.Captcha{
+    display: inline-block;
+
+}
+.Captcha img{
+    display: inline-block;
+    width: 120px;
+    height: 48px;
+    vertical-align: middle;
+}
+
+
+.wrap-Captcha{
+    width: 362px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+/*输入验证码*/
+.setCaptcha{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid #E0E4E7;
+    padding-left: 10px;
+    box-sizing: border-box;
+
+}
+/*获取验证码*/
+.getCaptcha{
+    position: absolute;
+    top: 0;
+    left: 260px;
+    width: 98px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid #E0E4E7;
+    border-left: none;
+    background-color: white;
+}
+
+
+/*注册新账号-忘记密码*/
+.register-now{
+    padding-left: 200px;
+    margin-top: 15px;
+    /*text-align: right;*/
+}
+.register-now a:hover{
+    text-decoration: underline;
+}
+/*第三方登录*/
+.thrid-wrap{width: 320px;height: 40px;margin:28px 40px 50px 0;display: inline-block;}
+.thrid-wrap span{font-size: 14px;line-height: 30px;float: left;}
+.thrid-wrap a{float: left;margin-left: 10px;width: 30px;height: 29px;display:block;}
+.thrid-WeChat{background: url(../img/icon/third-login.png) no-repeat -58px -1px;}
+.thrid-alipay{background: url(../img/icon/third-login.png) no-repeat -88px -1px;}
+.thrid-weibo{background: url(../img/icon/third-login.png) no-repeat -29px -1px;}
+.thrid-qq{background: url(../img/icon/third-login.png) no-repeat  0 -1px;}
+.thrid-WeChat:hover{background: url(../img/icon/third-login.png) no-repeat -58px -30px;}
+.thrid-alipay:hover{background: url(../img/icon/third-login.png) no-repeat -88px -30px;}
+.thrid-weibo:hover{background: url(../img/icon/third-login.png) no-repeat -29px -30px;}
+.thrid-qq:hover{background: url(../img/icon/third-login.png) no-repeat  0 -30px;}

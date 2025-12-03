@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>努比亚登录页面模仿</title>
+		<link rel="stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/login.css"/>
+	</head>
+
+	<body>
+		<div class="user-container">
+			<a href="index.html"><div class="user-logo"></div></a>
+			<form action="#" method="get">
+				<div id="lableItems" class="lableItems">
+					<label class="avtive">努比亚账号登录</label>
+					|
+					<label>手机验证码登录</label>
+				</div>
+				<div>
+					<div id="emailRegister">
+						<dl>
+							<dd class="input-margin">
+								<input type="text" name="userName" id="userName" placeholder="邮箱/手机号码/用户名" class="input-text" autofocus="autofocus"/>
+							</dd>
+						</dl>
+						<dl>
+							<dd class="input-margin">
+								<input type="password" name="password" id="password" placeholder="密码为6-16个字符（数字、字母、符号至少包含两种）" class="input-text"/>
+							</dd>
+						</dl>
+						<div class="clearfloat"></div>
+					</div>
+					<div id="phoneRegister">
+						<dl>
+							<dd class="input-margin">
+								<input type="text" id="phone" name="phone" placeholder="手机号码" class="input-text" autofocus="autofocus"/>
+							</dd>
+						</dl>
+						<dl>
+							<dd class="input-margin">
+								<input type="text" id="Captcha" name="Captcha" placeholder="请输入验证码（不区分大小写）" class="input-text"  style="width: 235px;"/>
+								<div class="Captcha">
+									<a>
+										<img src="img/icon/si.jpg"/>
+									</a>
+									<div class="clearfloat"></div>
+								</div>
+							</dd>
+						</dl>
+						<dl>
+							<dd class="input-margin">
+								<div class="wrap-Captcha">
+									<input type="text" id="phoneCaptcha" name="phoneCaptcha" placeholder="请输入手机验证码"  class="setCaptcha"/>
+									<input type="button" value="获取验证码" class="getCaptcha" />	
+									<div class="clearfloat"></div>
+								</div>							
+							</dd>
+						</dl>
+					</div>
+				</div>
+				
+				<input type="submit"  value="立 即 登 录" class="input-btn"/>
+				<div class="register-now">
+					<a href="#" style="color: #E8380D;">注册新账号</a>
+					<span style="font-size: 18px;padding: 0 7px;color: #d5d5d5;">|</span>
+					<a href="#" style="color: black;">忘记密码？</a>
+				</div>
+				<div class="thrid-wrap">
+					<span>其他登录方式：</span>
+					<label>
+						<a href="#" class="thrid-WeChat"></a>
+						<a href="#" class="thrid-alipay"></a>					
+						<a href="#" class="thrid-weibo"></a>
+						<a href="#" class="thrid-qq"></a>					
+					</label>
+				</div>
+			</form>
+			
+		</div>
+		
+	</body>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/login.js" ></script>
+
+</html>

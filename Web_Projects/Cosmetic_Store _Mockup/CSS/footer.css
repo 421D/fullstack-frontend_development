@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*底部导航菜单*/
+ 
+.footer{
+	background-color:#333;
+	color:#FFF;
+	line-height:25px;
+	font-family:"宋体";
+	text-decoration:none;
+	font-size:14px;
+	}
+
+.footerzt:link {
+	color: #FFF;
+	text-decoration: none;
+}
+.footerzt:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+.footerzt:hover {
+	text-decoration: none;
+	color: #CCC;
+}
+.footerzt:active {
+	text-decoration: none;
+	color: #CCC;
+	
+	

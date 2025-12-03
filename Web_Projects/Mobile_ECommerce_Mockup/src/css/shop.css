@@ -1,0 +1,298 @@
+	/*产品内容*/
+	
+	.shop-content {
+		width: 100%;
+		background-color: white;
+	}
+	/*内容导航*/
+	
+	.shop-nav {
+		background-color: white;
+		width: 100%;
+		height: 60px;
+		box-shadow: 0 7px 7px #ECECEC;
+		text-align: center;
+		z-index: 1000;
+	}
+	/*内容导航-滚动条下拉后显示的具体产品*/
+	
+	.shop-nav-list {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 0;
+		line-height: 60px;
+		text-align: right;
+		background-color: white;
+		color: #666;
+		border-bottom: 1px solid #ddd;
+		transition: height 0.5s;
+		overflow: hidden;
+		z-index: 1000;
+	}
+	
+	.shop-nav-list input {
+		height: 40px;
+		width: 125px;
+		border-radius: 5px;
+		cursor: pointer;
+		background-color: #E8380D;
+		color: white;
+		margin-right: 75px;
+	}
+	
+	.shop-nav-list input:hover {background-color: #D41414;}
+	/*内容导航-手机型号导航菜单*/
+	
+	.shop-navItems {
+		display: inline-block;
+		height: 58px;
+		text-align: center;
+	}
+	
+	.shop-navItems li {
+		font-size: 16px;
+		display: inline-block;
+		height: 58px;
+		width: 110px;
+		color: #999;
+		line-height: 56px;
+		cursor: pointer;
+	}
+	
+	.shop-navItems li:hover {	color: black;}
+	/*商品展示*/
+	
+	.shop-main {	text-align: center;	}
+	/*商品左侧区域*/
+	
+	.shop-mainLeft {
+		width: 567px;
+		height: 730px;
+		/*background-color: red;*/
+		display: inline-block;
+		text-align: center;
+		margin-top: 3px;
+	}
+	
+	.mainLeft-selected {display: inline-block;}
+	
+	.mainLeft-selected li {
+		float: left;
+		width: 85px;
+		height: 85px;
+		border: 1px solid #ccc;
+		margin-left: 10px;
+	}
+	
+	.mainLeft-selected li.active {	border: 1px solid #EB4F2C;}
+	
+	.mainLeft-selected img {
+		width: 82px;
+		height: 82px;
+		cursor: pointer;
+	}
+	/*分享和收藏*/
+	
+	.share-collecting {
+		float: left;
+		position: relative;
+		text-align: left;
+		width: 75px;
+		height: 22px;
+		margin: 35px 0 0 105px;
+		color: black;
+		line-height: 22px;
+	}
+	
+	.share-collectingTwo {	margin: 35px 0 0 0;}
+	
+	.share-collecting span {
+		position: absolute;
+		height: 20px;
+		line-height: 20px;
+		margin-right: 20px;
+		font-size: 14px;
+		cursor: pointer;
+	}
+	
+	.share {
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+		background: url(../img/icon/599558.png) no-repeat 0 0;
+		background-size: 12px;
+		cursor: pointer;
+	}
+	
+	.share-img {
+		background: url(../img/icon/XB.png) no-repeat center center;
+		width: 110px;
+		height: 130px;
+		background-size: 100%;
+		position: absolute;
+		top: -130px;
+		left: -5px;
+		display: none;
+	}
+	
+	.share-img li {
+		float: right;
+		height: 28px;
+		width: 75px;
+		line-height: 28px;
+		color: #999;
+	}
+	
+	.share-img li:hover {color: black;}
+	
+	.collecting {
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+		background: url(../img/icon/599556.png) no-repeat center center;
+		background-size: 18px;
+		cursor: pointer;
+	}
+	/*商品右侧区域*/
+	
+	.shop-mainRight {
+		width: 605px;
+		height: 730px;
+		display: inline-block;
+		color: black;
+		overflow: hidden;
+	}
+	/*包裹一层*/
+	
+	.warp-mainRight {
+		width: 102.8%;
+		height: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+	/**/
+	
+	.mainRight-p {
+		margin: 90px 0 0 40px;
+		padding-bottom: 25px;
+		border-bottom: 1px solid #D7D7D7;
+		text-align: left;
+		font-weight: bold;
+	}
+	
+	.mainRight-p a {color: #565656;font-size: 14px;}
+	
+	.mainRight-p a:hover {color: black;}
+	
+	.mainRight-point {
+		margin: 15px 0 40px 40px;
+		color: #ff4d4d;
+		font-size: 16px;
+		text-align: left;
+	}
+	
+	/*商品颜色选择*/
+	
+	.phone-net {margin-top: 30px;}
+	
+	.phone-net-p {
+		color: #000;
+		font-size: 18px;
+		text-align: left;
+		margin-left: 40px;
+		line-height: 18px;
+		margin-bottom: 20px;
+	}
+	
+	.phone-net-p a {color: #E8380D;	text-decoration: underline;	}
+	/*适用颜色选择 和 版本选择*/
+	.phone-color-edition {margin-left: 24px;}	
+	.phone-color-edition li {
+		float: left;
+		border: 1px solid #D7D7D7;
+		height: 65px;
+		width: 272px;
+		margin: 0 0 15px 18px;
+		line-height: 65px;
+		cursor: pointer;
+	}
+	.phone-color-edition li.active {border: 1px solid #FB1515;}
+		
+	/*屏幕宝*/	
+	.phone-screen {	margin: 20px 0 0 0;	font-size: 16px;}
+	
+	.phone-screen li {
+		float: left;
+		border: 1px solid #D7D7D7;
+		width: 370px;
+		height: 65px;
+		margin-left: 40px;
+		line-height: 65px;
+	}
+	.phone-screen li.active{border: 1px solid #FB1515;}
+	/*商品套餐-花呗分期*/
+	
+	.phone-net-huab {
+		text-align: left;
+		font-size: 16px;
+		margin: 6px 0 4px 40px;
+	}	
+	.phone-net-price {
+		text-align: left;
+		font-size: 16px;
+		margin: 0 0 20px 40px;
+	}
+		
+	/**/
+	.phone-combo-huab {margin-left: 25px;font-size: 12px;}	
+	.phone-combo-huab li {
+		float: left;
+		border: 1px solid #D7D7D7;
+		height: 65px;
+		width: 178px;
+		margin: 0 0 15px 15px;
+		padding-top: 12px;
+		cursor: pointer;
+	}	
+	.phone-combo-huab li.active{border: 1px solid #FB1515;}
+	.phone-combo-huab p {	font-size: 14px;margin-top: 10px;}	
+	.discounts-color {color: #fb1515;}
+
+	/*购买按钮*/
+	
+	.phone-buy-btn {text-align: left;margin-left: 40px;}	
+	.phone-buy-btn input {
+		height: 30px;
+		width: 126px;
+		border-radius: 5px;
+		background-color: #E8380D;
+		color: white;
+		margin-top: 30px;
+		cursor: pointer;
+	}
+	
+	.phone-buy-btn input:hover {background-color: #D41414;}
+	
+	/*商品详情和规格参数*/	
+	.details-img {
+		width: 100%;
+		text-align: left;
+		margin-top: 50px;
+		background-color: white;
+	}
+	
+	.details-head {height: 60px;width: 100%;font-size: 18px;}
+	
+	.details-head li {float: left;color: black;margin: 19px 0;	padding: 0 50px;cursor: pointer;}
+	/**/
+	
+	.details-head li.active {color: #E33B1F;}
+	
+	.product-detail-img img {max-width: 100%;vertical-align: middle;}
+	
+	.parameter-img {display: none;}
+	
+	.parameter-img img {max-width: 100%;	vertical-align: middle;}
